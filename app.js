@@ -23,7 +23,7 @@ const x = setInterval(function(){
 
     document.getElementById("countdown").innerHTML = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
 
-    if (distanceBetweenTimes > 0) {
+    if (distanceBetweenTimes < 0) {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "EXPIRED"
     }
