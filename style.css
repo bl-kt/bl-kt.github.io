@@ -1,0 +1,68 @@
+html, body{
+    background: #2c2f33;
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+
+/* splash */
+
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #23272A;
+    z-index: 200;
+    color: white;
+    text-align: left;
+    
+}
+
+
+.splash.display-none{
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #23272A;
+    z-index: -10;
+    color: white;
+    text-align: left;
+    transition: all 0.5s;
+}
+
+/* coming soon */
+
+
+.top-left{
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottom-left{
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle{
+    position: absolute;
+    top: 45%;
+    left: 44%;
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+
