@@ -38,13 +38,23 @@ html, body{
     transition: all 0.5s;
 }
 
+.splash-logo{
+    padding-top: 30px
+}
+
 /* coming soon */
 
 
 .top-left{
     position: absolute;
-    top: 0;
+    top: 0.25;
     left: 16px;
+}
+
+.top-right{
+    position: absolute;
+    top: 0;
+    right: 16px;
 }
 
 .bottom-left{
@@ -64,5 +74,4 @@ hr {
     margin: auto;
     width: 10em;
 }
-
 

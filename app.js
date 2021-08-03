@@ -1,3 +1,5 @@
+//splash
+
 const splash = document.querySelector('.splash');
 
 document.addEventListener('DOMContentLoaded',(e)=>{
@@ -6,6 +8,7 @@ document.addEventListener('DOMContentLoaded',(e)=>{
     },2500);
 })
 
+//countdown
 
 const countDownDate= new Date("September 1, 2021 12:00:00").getTime();
 
