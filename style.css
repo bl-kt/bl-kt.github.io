@@ -54,15 +54,15 @@ html, body{
 }
 
 .middle{
-    position: absolute;
-    top: 45%;
-    left: 44%;
+    position: relative;
+    top: 45vh;
     text-align: center;
 }
 
 hr {
+    position: static;
     margin: auto;
-    width: 40%;
+    width: 10em;
 }
 
 
