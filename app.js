@@ -1,31 +1,34 @@
 //splash
 
-const splash = document.querySelector('.splash');
+const splash = document.querySelector(".splash");
 
-document.addEventListener('DOMContentLoaded',(e)=>{
+document.addEventListener("DOMContentLoaded",(e)=>{
     setTimeout(()=>{
-        splash.classList.add('display-none')
+        splash.classList.add("display-none")
     },2500);
 })
 
-//countdown
+//countdown - does not work. switching from document.byid to document.queryselector
 
-const countDownDate= new Date("September 1, 2021 12:00:00").getTime();
+const days = document.querySelector("#days .count .countdownNumb");
+const hours = document.querySelector("#hours .countdownNumb");
+const minutes = document.querySelector("#minutes .countdownNumb");
+const seconds = document.querySelector("#seconds .countdownNumb");
 
-const x = setInterval(function(){
-    let now = new Date().getTime();
-    let distanceBetweenTimes = countDownDate - now;
+var timer = setInterval(()=>{
+    var launchDate = new Date("2021-09-1").getTime();
+    var now = new Date().getTime();
+    var duration = launchDate - now;
 
-    let days = Math.floor(distanceBetweenTimes / ( 1000 * 60 * 60 * 24));
-    let hours = Math.floor((distanceBetweenTimes % ( 1000 * 60 * 60 * 24)) / ( 1000 * 60 * 60 ));
-    let minutes = Math.floor((distanceBetweenTimes % ( 1000 * 60 * 60)) / ( 1000 * 60));
-    let seconds = Math.floor((distanceBetweenTimes % ( 1000 * 60 * 60)) / 1000);
+    var d = Math.floor(duration / (1000 * 60 * 60 * 24));
+    var h = Math.floor((duration % (100 * 60 * 60 * 24)) / (100 * 60 * 60));
+    var m = Math.floor((duration % (100 * 60 * 60)) / (100 * 60));
+    var s = Math.floor((duration % (1000 * 60)) / 1000);
 
-    document.getElementById("countdown").innerHTML = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
-
-    if (distanceBetweenTimes < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").innerHTML = "EXPIRED"
-    }
+    days.innerHTML = d;
+    hours.innerHTML = h;
+    minutes.innerHTML = m;
+    seconds.innerHTML = s;
 
 },1000);
+

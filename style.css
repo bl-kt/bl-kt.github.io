@@ -1,11 +1,19 @@
+/* general */
+
 html, body{
-    background: #2c2f33;
-    color: white;
+
     width: 100%;
     height: 100%;
-    margin: 0;
-    border: 0;
-    outline: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    overflow: hidden;
+}
+
+div{
+    display:block;
 }
 
 /* splash */
@@ -53,36 +61,151 @@ html, body{
     animation: fadeIn 1s ease-in forwards
 }
 
-/* coming soon */
+/* header */
 
-
-.top-left{
-    position: absolute;
-    top: 0.25;
-    left: 16px;
-}
-
-.top-right{
-    position: absolute;
-    top: 0;
-    right: 16px;
-}
-
-.bottom-left{
-    position: absolute;
-    bottom: 0;
-    left: 16px;
-}
-
-.middle{
+#header {
     position: relative;
-    top: 45vh;
+    min-height: 100px;
+    margin: 0 auto;
+    padding-top: 32px;
+    max-width: 940px;
+
+}
+
+#brand{
     text-align: center;
+    position: absolute;
+    bottom: 25px;
+    left: 10px;
+}
+
+#brand:hover{
+    color: orange;
+    fill: orange;
+    stroke: orange;
+}
+
+/* hero */
+
+#hero{
+    height: calc(100vh-150px);
+    position: relative;
+    align-items: center;
+    display: grid;
+    padding-top: 90px;
+
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 90px;
+    grid-template-columns: 1fr;
+}
+
+#hero-content{
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 75px;
+    grid-template-columns: 1fr;
+
+}
+
+#hero-text{
+    text-align: center;
+}
+
+#hero-title{
+    font-family: Megrim, sans-serif;
+    font-size: 30px;
+    color: orange;
+}
+
+#hero-p{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 44px;
+}
+
+/* countdown */
+
+#countdown{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#countdown .count{
+    height: 90px;
+    width: 90px;
+    border: 2px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#countdown .count .countdownText:hover, #countdown .count:hover{
+    border-color: orange;
+    color: orange;
+}
+
+#countdown .count .countdownNumber{
+    font-size: 30px;
+    font-weight: 500; 
+    font-family: Megrim;
+}
+
+#countdown .count .countdownText{
+    font-size: 20px;
+    font-family: Megrim;
+}
+
+
+/* footer */
+
+#footer{
+    position: relative;
+    min-height: 100px;
+    margin: 100px auto 0;
+    max-width: 940px;
+}
+
+#footer-content{
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
 }
 
 hr {
     position: static;
     margin: auto;
     width: 10em;
+    
 }
 
+/* light and dark */
+
+.dark{
+    stroke:#fff;
+    fill: #fff;
+    color: #fff;
+    background: #2c2f33;
+
+}
+
+.light{
+    stroke: #000;
+    fill: #000;
+    color: #000;
+
+    background: #fff;
+}
+
+svg{
+    color: "white";
+    fill: currentColor;
+}

@@ -4,37 +4,91 @@
 
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen|Megrim|Roboto">
+
         <meta charset="utf-8"/> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome = 1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
         <title> BLKT - Coming Soon </title>
     </head>
 
-    <body>
+    <body class="dark">
 
         <div class="splash" style ="text-align: center;">
             <object>
-                <img class = "fade-in splash-logo" src="blktLoading.svg" height= 80% width="80%"></embed>
+                <image class = "fade-in splash-logo" src=".\content\blktLoading.svg" alt="loading" height= 80% width=80%></image>
             </object>
         </div>
 
-        <header class="header"> 
-            <h1 class="top-left"> [BLKT] </h1>
-         </header>
+        <header id="header"> 
 
-        <div class="coming-soon">
-
-            <div class="middle">
-                <h2> Coming Soon</h2>
-                <hr>
-                <p id="countdown" style= "font-size: 25px; font-style: italic;"></p>
+            <div id="brand">
+                <object>
+                <image class="dark" src=".\content\blktLogo.svg" alt="logo" width = 120em>
+                </object>
             </div>
 
-            <div class="bottom-left">
-                <p> © BLKT </p>
+            <div id="nav">
+
+            </div>
+
+         </header>
+
+        <div id="hero">
+
+            <div id="hero-content">
+                <div id="hero-text">
+                    <h2 id="hero-title"> Coming soon</h2>
+                    <hr>
+                    <p id="hero-p"> I'm currently ensuring development robots are running smoothly. <br> Check back soon for more! </p>
+                </div>
+
+                <div id="countdown">
+
+                    <div id="days">
+                        <div class="count">
+                            <div class="countdownNumb">00 </div>
+                            <div class="countdownText"> d</div>
+                        </div>
+                    </div>
+
+                    <div id="hours">
+                        <div class="count">
+                            <div class="countdownNumb">00 </div>
+                            <div class="countdownText"> h</div>
+                        </div>
+                    </div>
+
+                    <div id="minutes">
+                        <div class="count">
+                            <div class="countdownNumb">00 </div>
+                            <div class="countdownText"> m </div>
+                        </div>
+                    </div>
+
+                    <div id="seconds">
+                        <div class="count">
+                            <div class="countdownNumb">00 </div>
+                            <div class="countdownText"> s</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
             </div>
     
         </div>
+        <br>
+        <br>
+        <br>
+        <footer id="footer">
+            <div id = "footer-content">
+                <p> © 2021 BLKT </p>
+            </div>
+        </footer>
 
         <script src="app.js"></script>
 
