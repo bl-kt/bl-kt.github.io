@@ -145,7 +145,17 @@ nav ol, nav ul {
     stroke:  #2867B2;
 }
 
+#github:hover{
+    color: #c9510c;
+    fill: #c9510c;
+    stroke: #c9510c;
+}
 
+#dribbble:hover{
+    color: #ea4c89;
+    fill: #ea4c89;
+    stroke: #ea4c89;
+}
 
 
 /* hero */
