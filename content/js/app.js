@@ -31,4 +31,3 @@ document.addEventListener("DOMContentLoaded",(e)=>{
   //  seconds.innerHTML = s;
 
 //},1000);
-

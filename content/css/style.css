@@ -77,6 +77,14 @@ h1, h2, h3{
     font-family: Oxygen, sans-serif;
 }
 
+h1, h2{
+    color: orange;
+}
+
+abbr{
+    color: orange;
+}
+
 /* splash */
 
 .splash{
@@ -207,10 +215,9 @@ nav ol, nav ul {
 
 .content{
     max-width: 700px;
-    margin: auto;
+    margin: 0 auto;
     padding-top: 75px;
     grid-template-columns: 1fr;
-
 } 
 
 .right-content{
@@ -303,8 +310,14 @@ nav ol, nav ul {
 
 }
 
+.subscript{
+  font-size: 15px;
+  font-family: Roboto, sans-serif;  
+  line-height: 0.5em;
+}
 
-.skills-list li{
+
+.block-list li{
     background:  #323234;
     color: #fafafa;
     display: inline-block;
@@ -314,7 +327,7 @@ nav ol, nav ul {
     font-family: Oxygen, sans-serif;
 }
 
-.skills-list li:hover{
+.block-list li:hover{
     background: #32323471;
 }
 
@@ -322,50 +335,26 @@ nav ol, nav ul {
     background: orange;
 }
 
-/* countdown */
+/* courses */
 
-#countdown{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-wrap: wrap;
+courses-wrapper{
+    text-align: left;
+
+    height: calc(100vh);
+    position: relative;
     align-items: center;
-    justify-content: space-around;
+    display: grid;
+
+    max-width: 700px;
+    margin: 0 auto;
+    grid-template-columns: 1fr; 
 }
-
-#countdown .count{
-    height: 90px;
-    width: 90px;
-    border: 2px solid;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#countdown .count .countdownText:hover, #countdown .count:hover{
-    border-color: orange;
-    color: orange;
-}
-
-#countdown .count .countdownNumber{
-    font-size: 30px;
-    font-weight: 500; 
-    font-family: Megrim;
-}
-
-#countdown .count .countdownText{
-    font-size: 20px;
-    font-family: Megrim;
-}
-
 
 /* footer */
 
 footer {
     max-width: 940px;
-    margin: 100px auto 0;
+    margin: 75px auto 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     font-size: 14px;
@@ -374,6 +363,7 @@ footer {
 footer p {
     text-align: left;
     letter-spacing: .36px;
+    font-family: Roboto, sans-serif;
 }
 
 
