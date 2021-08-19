@@ -62,7 +62,7 @@ hr {
 }
 
 .divider {
-    background-image: linear-gradient(-285deg,#fff 20%,#fff);
+    background-image: linear-gradient(-285deg,#4d4d50 20%, #252526 80%,#4d4d50 100%);
     transform: skewY(-6deg);
     height: 1px;
     width: 100%;
@@ -75,10 +75,6 @@ div{
 
 h1, h2, h3{
     font-family: Oxygen, sans-serif;
-}
-
-h1, h2{
-    color: orange;
 }
 
 abbr{
@@ -161,7 +157,6 @@ nav #social {
     padding: 30px 30px;
 }
 
-
 nav ol, nav ul {
     list-style: none;
     margin: 0;
@@ -192,9 +187,7 @@ nav ol, nav ul {
     stroke: #ea4c89;
 }
 
-
 /* hero */
-
 
 #hero{
     height: calc(100vh - 260px);
@@ -220,11 +213,6 @@ nav ol, nav ul {
     grid-template-columns: 1fr;
 } 
 
-.right-content{
-    max-width: 700px;
-    padding-top: 75px;
-    grid-template-columns: 1fr;
-}
 
 .text{
     text-align: center;
@@ -304,10 +292,19 @@ nav ol, nav ul {
     align-items: center;
     display: grid;
 
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     grid-template-columns: 1fr;
 
+}
+
+.about-pfp{
+    border-radius: 50%;
+    float: left;
+    height: 300px;
+    width:  280px;
+    margin: 100px 40px 100px 0px;
+    position: relative;
 }
 
 .subscript{
@@ -315,7 +312,6 @@ nav ol, nav ul {
   font-family: Roboto, sans-serif;  
   line-height: 0.5em;
 }
-
 
 .block-list li{
     background:  #323234;
@@ -325,6 +321,7 @@ nav ol, nav ul {
     padding: .25em .5em;
     position: relative;
     font-family: Oxygen, sans-serif;
+    line-height: 0.7em;
 }
 
 .block-list li:hover{
@@ -335,9 +332,66 @@ nav ol, nav ul {
     background: orange;
 }
 
+/*about slideshow*/
+
+.slideshow-container{
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+}
+
+.slide{
+    display: none;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    color: orange;
+}
+
+.slide-fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slide-visible{
+    display: block;
+}
+
+@-webkit-keyframes fade {
+    from {opacity : .4}
+    to {opacity: 1}
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
 /* courses */
 
-courses-wrapper{
+#courses-wrapper{
     text-align: left;
 
     height: calc(100vh);
@@ -365,7 +419,6 @@ footer p {
     letter-spacing: .36px;
     font-family: Roboto, sans-serif;
 }
-
 
 /* light and dark */
 
