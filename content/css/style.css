@@ -158,12 +158,12 @@ nav {
 
 nav #social li{
     float: left;
-    margin-left: 5px;
+    margin-left: 0.5vw;
 }
 
 nav #social button{
-    width: 24px;
-    height: 24px;
+    width: 24vh;
+    height: 24vh;
     display: in-line-block;
     padding: 8px 12px;
 }
