@@ -8,27 +8,54 @@ document.addEventListener("DOMContentLoaded",(e)=>{
     },2500);
 })
 
-//countdown - does not work. switching from document.byid to document.queryselector
+//slideshow
+let slideIndex = 1;
+const slides = document.querySelectorAll("article.slide");
 
-const days = document.querySelector("#days .count .countdownNumb");
-const hours = document.querySelector("#hours .countdownNumb");
-const minutes = document.querySelector("#minutes .countdownNumb");
-const seconds = document.querySelector("#seconds .countdownNumb");
+function currentSlide(n){
+    showSlides(slideIndex = n);
+}
 
-var timer = setInterval(()=>{
-    var launchDate = new Date("2021-09-1").getTime();
-    var now = new Date().getTime();
-    var duration = launchDate - now;
+function plusSlides(n){
+    showSlides(slideIndex +=n);
 
-    var d = Math.floor(duration / (1000 * 60 * 60 * 24));
-    var h = Math.floor((duration % (100 * 60 * 60 * 24)) / (100 * 60 * 60));
-    var m = Math.floor((duration % (100 * 60 * 60)) / (100 * 60));
-    var s = Math.floor((duration % (1000 * 60)) / 1000);
+}
 
-    days.innerHTML = d;
-    hours.innerHTML = h;
-    minutes.innerHTML = m;
-    seconds.innerHTML = s;
+function showSlides(n){
 
-},1000);
+    if (n > slides.length){
+        slideIndex=1;
+    }
 
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    for (let i = 0; i < slides.length; i++){
+        slides[i].style.display= "none";
+    }
+
+    slides[slideIndex-1].style.display = "block";
+
+}
+
+showSlides(slideIndex);
+
+//dark mode
+
+const body = document.querySelector('body');
+const mode = document.querySelector("#mode");
+const moon = document.querySelector('#moon');
+const sun = document.querySelector('#sun');
+
+function lightMode(){
+    body.classList.toggle('light');
+    if (body.classList.contains('light')){
+        moon.style.display = "inline-block";
+        sun.style.display = "none";
+    }
+    else {
+        sun.style.display = "inline-block";
+        moon.style.display = "none";
+    }
+}
