@@ -238,7 +238,7 @@ nav ol, nav ul {
     max-width: 700px;
     margin: 0px auto;
     padding: 0px 40px 0px;
-    padding-top: 50px;
+    padding-top: 5vh;
     grid-template-columns: 1fr;
     width: auto;
 } 
@@ -263,19 +263,19 @@ nav ol, nav ul {
 
 .subtitle {
     font-family: Oxygen, sans-serif;
-    font-size: 3vh;
+    font-size: 2.3vh;
 }
 
 .p{
     font-family: Roboto, sans-serif;
-    font-size: 2vh;
+    font-size: 1.8vh;
     line-height: 30px;
     margin-bottom: 44px;
 }
 
 #home-p{
     font-family: Roboto, sans-serif;
-    font-size: 2vh;
+    font-size: 1.8vh;
     line-height: 30px;
     margin-bottom: 44px;
     max-width: 500px;
@@ -294,7 +294,7 @@ nav ol, nav ul {
     color: white;
     background-color: orange;
     padding: 15px 24px 17px;
-    font-size: 2vh;
+    font-size: 1.8vh;
     font-family: Roboto, sans-serif;
     text-align: center;
     border-radius: 5px;
@@ -331,6 +331,22 @@ nav ol, nav ul {
 
 }
 
+.skill-wrapper{
+    text-align: left;
+
+    height: calc(100vh - 260px);
+    position: relative;
+    align-items: center;
+    display: in-line block;
+
+    padding-bottom: 100px;
+
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    
+    overflow: hidden;
+}
+
 .about-pfp{
     display: block;
     border-radius: 50%;
@@ -352,6 +368,7 @@ nav ol, nav ul {
     padding: .25em .5em;
     position: relative;
     font-family: Oxygen, sans-serif;
+    font-size: 1.8vh;
     line-height: 1.5em;
 }
 
