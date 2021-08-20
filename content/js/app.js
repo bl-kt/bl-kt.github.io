@@ -40,3 +40,14 @@ function showSlides(n){
 }
 
 showSlides(slideIndex);
+
+//dark mode
+
+const body = document.querySelector('body');
+console.log(body);
+const mode = document.querySelector("#mode");
+
+function lightMode(){
+    body.classList.toggle('light');
+    console.log('lite')
+}

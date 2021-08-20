@@ -13,6 +13,10 @@ html, body{
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
+
+    fill: #fff;
+    color: #fff;
+    background-color: #252526;
 }
 
 ::-webkit-scrollbar{
@@ -74,8 +78,9 @@ h1, h2, h3{
     font-family: Oxygen, sans-serif;
 }
 
-abbr{
-    color: orange;
+svg {
+    color: #fff;
+    fill: #fff;
 }
 
 /* splash */
@@ -137,9 +142,30 @@ nav {
     grid-template-columns: 80px 1fr;
 }
 
+#brand svg{
+    color: #fff;
+    stroke: #fff;
+    fill: #ffffff00 !important;
+    stroke-width: 5px;
+
+}
+
+#brand svg:hover{
+    color: orange;
+    stroke: orange;
+
+}
+
 nav #social li{
     float: left;
     margin-left: 12px;
+}
+
+nav #social button{
+    width: 24px;
+    height: 24px;
+    display: in-line-block;
+    padding: 8px 12px;
 }
 
 nav #social li a{
@@ -210,7 +236,7 @@ nav ol, nav ul {
     max-width: 700px;
     margin: 0px auto;
     padding: 0px 40px 0px;
-    padding-top: 75px;
+    padding-top: 50px;
     grid-template-columns: 1fr;
     width: auto;
 } 
@@ -222,8 +248,11 @@ nav ol, nav ul {
 }
 
 .title{
+    line-height: 54px;
     font-family: Oxygen, sans-serif;
-    font-size: 35px;
+    font-size: 45px;
+    font-weight: 3000;
+    letter-spacing: -.34px;
 }
 
 .colorTitle{
@@ -327,12 +356,10 @@ nav ol, nav ul {
 }
 
 .block-list li:hover{
-    background: #32323471;
+    background: orange;
+    color: black;
 }
 
-.specialty{
-    background: orange;
-}
 
 /*about slideshow*/
 
@@ -416,7 +443,6 @@ nav ol, nav ul {
 footer {
     display: grid;
     font-size: 14px;
-    background:linear-gradient(to bottom, #252526, #19191a);
 }
 
 footer p {
@@ -435,7 +461,7 @@ footer p {
     display: grid;
     margin: 0 auto;
 
-    height: calc(100vh - 260px);
+    height: calc(100vh);
     position: relative;
     align-items: center;
     max-width: 900px;
@@ -443,7 +469,7 @@ footer p {
 }
 
 .footer-background{
-    background:linear-gradient(to bottom, #252526, #19191a); 
+    background:linear-gradient(to bottom, #252526, #19191a);
 }
 
 .footer-grid{
@@ -462,26 +488,76 @@ footer p {
 }
 
 
-/* light and dark */
-
-.dark{
-    stroke:#fff;
-    fill: #fff;
-    color: #fff;
-    background-color: #252526;
-
-}
+/* light mode */
 
 .light{
-    stroke: #000;
-    fill: #000;
-    color: #000;
-
-    background: #fff;
+    color: #494949;
+    background: #e4e4e4;
 }
 
-svg {
+.light svg{
+    color: #494949;
+    fill: #494949;
+
+}
+
+.light .colorTitle{
+    color: #fd5e53
+}
+
+.light abbr{
+    color: #fd5e53;
+}
+
+.light .link{
+    color: #fd5e53;
+}
+
+.light .button{
+    background: #fd5e53;
+
+}
+
+.light .divider{
+    background-image: linear-gradient(-285deg,#c2c2c2 20%, #e4e4e4 80%,#c2c2c2 100%);
+    transform: skewY(-6deg);
+    height: 1px;
+    width: 100%;
+    margin: 60px 0;
+}
+
+.light .footer-background{
+    background:linear-gradient(to bottom, #e4e4e4, #acacac);
+}
+
+.light .nav-wrapper{
+    background:linear-gradient(to top, #e4e4e4, #b9b9b9);
+}
+
+.light #brand svg{
+    stroke: #494949;
+    fill: #ffffff00 !important;
+    stroke-width: 5px;
+}
+
+.light #brand svg:hover{
+    color: #fd5e53;
+    stroke: #fd5e53;
+}
+
+.light .block-list li{
+    background: #727272;
     color: #fff;
-    color: "white";
-    fill: currentColor;
+}
+
+.light .block-list li:hover{
+    background: #fd5e53;
+}
+
+.light #hero{
+    background-image: url(../images/lightHeroBG.svg);
+}
+
+.light .prev, .light .next{
+    color:#727272;
 }
