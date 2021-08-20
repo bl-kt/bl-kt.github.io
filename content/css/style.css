@@ -252,7 +252,7 @@ nav ol, nav ul {
 .title{
     line-height: 54px;
     font-family: Oxygen, sans-serif;
-    font-size: 45px;
+    font-size: 5vh;
     font-weight: 3000;
     letter-spacing: -.34px;
 }
@@ -263,20 +263,19 @@ nav ol, nav ul {
 
 .subtitle {
     font-family: Oxygen, sans-serif;
-    font-size: 20px;
-    color: orange;
+    font-size: 3vh;
 }
 
 .p{
     font-family: Roboto, sans-serif;
-    font-size: 16px;
+    font-size: 2vh;
     line-height: 30px;
     margin-bottom: 44px;
 }
 
 #home-p{
     font-family: Roboto, sans-serif;
-    font-size: 16px;
+    font-size: 2vh;
     line-height: 30px;
     margin-bottom: 44px;
     max-width: 500px;
@@ -295,7 +294,7 @@ nav ol, nav ul {
     color: white;
     background-color: orange;
     padding: 15px 24px 17px;
-    font-size: 16px;
+    font-size: 2vh;
     font-family: Roboto, sans-serif;
     text-align: center;
     border-radius: 5px;
@@ -341,7 +340,7 @@ nav ol, nav ul {
 }
 
 .subscript{
-  font-size: 15px;
+  font-size: 2vh;
   font-family: Roboto, sans-serif;  
 }
 
@@ -450,7 +449,7 @@ footer p {
     max-width: 700px;
     margin: 0 auto;
     display: grid;
-    font-size: 14px;
+    font-size: 1.9vh;
     text-align: left;
     letter-spacing: .36px;
     font-family: Roboto, sans-serif;
