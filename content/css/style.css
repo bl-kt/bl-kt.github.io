@@ -462,7 +462,7 @@ footer p {
     display: grid;
     margin: 0 auto;
 
-    height: calc(100vh+100px);
+    height: calc(100vh - 260px);
     position: relative;
     align-items: center;
     max-width: 900px;
@@ -471,6 +471,7 @@ footer p {
 
 .footer-background{
     background:linear-gradient(to bottom, #252526, #19191a);
+    height: calc(100vh)
 }
 
 .footer-grid{
