@@ -44,10 +44,18 @@ showSlides(slideIndex);
 //dark mode
 
 const body = document.querySelector('body');
-console.log(body);
 const mode = document.querySelector("#mode");
+const moon = document.querySelector('#moon');
+const sun = document.querySelector('#sun');
 
 function lightMode(){
     body.classList.toggle('light');
-    console.log('lite')
+    if (body.classList.contains('light')){
+        moon.style.display = "block";
+        sun.style.display = "none";
+    }
+    else {
+        sun.style.display = "block";
+        moon.style.display = "none";
+    }
 }
