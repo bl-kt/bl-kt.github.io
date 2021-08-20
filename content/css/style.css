@@ -462,7 +462,7 @@ footer p {
     display: grid;
     margin: 0 auto;
 
-    height: calc(100vh);
+    height: calc(100vh+100px);
     position: relative;
     align-items: center;
     max-width: 900px;
