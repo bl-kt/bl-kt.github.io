@@ -51,11 +51,11 @@ const sun = document.querySelector('#sun');
 function lightMode(){
     body.classList.toggle('light');
     if (body.classList.contains('light')){
-        moon.style.display = "block";
+        moon.style.display = "inline-block";
         sun.style.display = "none";
     }
     else {
-        sun.style.display = "block";
+        sun.style.display = "inline-block";
         moon.style.display = "none";
     }
 }
