@@ -30,11 +30,13 @@ a {
 
 ul {
     padding-left: 0;
+    line-height: 2.75em;
 }
 
 ul li {
     margin-bottom: 15px;
     list-style: none;
+    line-height: 5em;
 }
 
 ol, ul {
@@ -180,7 +182,7 @@ nav a {
 
 nav #social {
     justify-self: right;
-    padding: 30px 20px;
+    padding: 15px 20px;
 }
 
 nav ol, nav ul {
@@ -341,7 +343,6 @@ nav ol, nav ul {
 .subscript{
   font-size: 15px;
   font-family: Roboto, sans-serif;  
-  line-height: 0.5em;
 }
 
 .block-list li{
@@ -352,7 +353,7 @@ nav ol, nav ul {
     padding: .25em .5em;
     position: relative;
     font-family: Oxygen, sans-serif;
-    line-height: 0.7em;
+    line-height: 1.5em;
 }
 
 .block-list li:hover{
@@ -431,10 +432,10 @@ nav ol, nav ul {
     align-items: center;
     display: grid;
     margin: auto;
-
     max-width: 700px;
     margin: 0 auto;
     grid-template-columns: 1fr; 
+    padding-bottom: 10vh;
 }
 
 
@@ -558,7 +559,7 @@ footer p {
     background-image: url(../images/lightHeroBG.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 350px;
+    background-size: 40vh;
     background-position: absolute;
 }
 
