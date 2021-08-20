@@ -8,3 +8,4 @@ Self-Developed Portfolio Website
 - Projects sections
 - Fix bugs
 - Fix minor alignment issues
+- Add Aria values for elements
