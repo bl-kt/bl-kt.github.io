@@ -471,7 +471,8 @@ footer p {
 
 .footer-background{
     background:linear-gradient(to bottom, #252526, #19191a);
-    height: calc(100vh)
+    height: calc(100vh);
+    bottom: 0;
 }
 
 .footer-grid{
