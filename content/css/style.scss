@@ -424,9 +424,11 @@
 //general
 
 body{
-    @include main()
+    @include main();
+    transition: all 0.5s ease;
 }
 
 .light{
     @include main($highlight: #fd5e53, $highlight-dark:#e05348, $highlight-light:#4949496b, $text: #494949, $background: #e4e4e4, $grad:#c2c2c2, $divider: #c2c2c2);
+    transition: all 0.5s ease;
 }

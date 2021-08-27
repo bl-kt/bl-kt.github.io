@@ -11,6 +11,8 @@ body {
   right: 0;
   bottom: 0;
   margin: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 body ::-webkit-scrollbar {
@@ -454,6 +456,8 @@ body .footer-background .contact-wrapper #map {
   right: 0;
   bottom: 0;
   margin: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .light ::-webkit-scrollbar {
