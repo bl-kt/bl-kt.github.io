@@ -181,19 +181,22 @@
         stroke: #c9510c;
     }
     
-    #dribbble:hover{
-        fill: #ea4c89;
-        stroke: #ea4c89;
-    } 
+    //#dribbble:hover{
+        //fill: #ea4c89;
+        //stroke: #ea4c89;
+    //} 
+
+    //#dribbble{
+        //fill: $text;
+   // }
 
     #sun:hover, #moon:hover{
         fill: $highlight-light;
         stroke: $highlight-light;
     }
 
-    #linkedin, #dribbble, #github, #sun, #moon{
+    #linkedin, #github, #sun, #moon{
         fill: $text;
-
     }
 
     #mode #moon{
